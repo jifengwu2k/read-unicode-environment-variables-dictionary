@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "read-unicode-environment-variables-dictionary"
+version = "0.1.0a0"
+description = "Use raw ctypes to read Unicode environment variables directly from the OS, even where Python's own `os` module is incomplete or restricted."
+readme = "README.md"
+requires-python = ">=2"
+license = "MIT"
+authors = [
+  { name="Jifeng Wu", email="jifengwu2k@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "posix-or-nt",
+    "typing; python_version < '3.5'"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jifengwu2k/read-unicode-environment-variables-dictionary"
+"Bug Tracker" = "https://github.com/jifengwu2k/read-unicode-environment-variables-dictionary/issues"
